@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'fooderlich_theme.dart';
 
 void main() {
   // 1
@@ -10,18 +12,26 @@ class Fooderlich extends StatelessWidget {
   const Fooderlich({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    // TODO: Create theme
+    final theme = FooderlichTheme.light();// claro ou escuro dark or light
+
     // TODO: Apply Home widget
     // 3
     return MaterialApp(
-      // TODO: Add theme
+      // theme: theme,
+
       title: 'Fooderlich',
       // 4
       home: Scaffold(
-        // TODO: Style the title
-        appBar: AppBar(title: const Text('Fooderlich')),
-        // TODO: Style the body text
-        body: const Center(child: Text('Let\'s get cooking 👩‍🍳')),
+        appBar: AppBar(
+          title: Text(
+            'Fooderlich',
+            style: theme.textTheme.headline6,
+          ),
+        ),
+        body: Center(
+          child: Text('Let\'s get cooking 👩‍🍳',
+              style: theme.textTheme.headline1),
+        ),
       ),
     );
   }
