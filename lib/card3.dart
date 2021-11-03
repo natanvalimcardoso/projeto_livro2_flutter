@@ -49,7 +49,8 @@ class Card3 extends StatelessWidget {
                 ),
               ),
               ///////////////////////
-              Center( //adiciona as opções saudavelveganos 
+              Center(
+                //adiciona as opções saudavelveganos
                 // 11
                 child: Wrap(
                   // 12
@@ -58,7 +59,8 @@ class Card3 extends StatelessWidget {
                   spacing: 12,
                   // 14
                   children: [
-                    Chip( //widget de exibição que exibe texto e avatares de imagem, e também executa ações do usuário, como tocar e excluir.
+                    Chip(
+                      //widget de exibição que exibe texto e avatares de imagem, e também executa ações do usuário, como tocar e excluir.
                       label: Text('Healthy',
                           style: FooderlichTheme.darkTextTheme.bodyText1),
                       backgroundColor: Colors.green,
@@ -75,36 +77,31 @@ class Card3 extends StatelessWidget {
                       },
                     ),
                     Chip(
-                      label: Text('Carrots',
-                          style: FooderlichTheme.darkTextTheme.bodyText1),
-                      backgroundColor: Colors.green,
-                      onDeleted: () {
-                        print('delete');
-                      }
-                    ),
+                        label: Text('Carrots',
+                            style: FooderlichTheme.darkTextTheme.bodyText1),
+                        backgroundColor: Colors.green,
+                        onDeleted: () {
+                          print('delete');
+                        }),
                     Chip(
                       label: Text('Apples',
                           style: FooderlichTheme.darkTextTheme.bodyText1),
                       backgroundColor: Colors.black.withOpacity(0.7),
-                      
                     ),
                     Chip(
                       label: Text('Oranges',
                           style: FooderlichTheme.darkTextTheme.bodyText1),
                       backgroundColor: Colors.black.withOpacity(0.7),
-                      
                     ),
                     Chip(
                       label: Text('Lemons',
                           style: FooderlichTheme.darkTextTheme.bodyText1),
                       backgroundColor: Colors.black.withOpacity(0.7),
-                      
                     ),
                     Chip(
                       label: Text('Bananana',
                           style: FooderlichTheme.darkTextTheme.bodyText1),
                       backgroundColor: Colors.black.withOpacity(0.7),
-                      
                     ),
                   ],
                 ),
@@ -116,8 +113,6 @@ class Card3 extends StatelessWidget {
                     borderRadius:
                         const BorderRadius.all(Radius.circular(10.0))),
               )
-              // TODO 6: Add Container, Column, Icon and Text
-              // TODO 7: Add Center widget with Chip widget children
             ],
           )),
     );
